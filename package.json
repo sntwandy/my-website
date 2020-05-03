@@ -1,0 +1,23 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "It's my personal website: @sntwandy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sntwandy/my-website.git"
+  },
+  "keywords": [
+    "Personal",
+    "Website"
+  ],
+  "author": "@sntwandy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sntwandy/my-website/issues"
+  },
+  "homepage": "https://github.com/sntwandy/my-website#readme"
+}
