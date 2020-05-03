@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/sntwandy/my-website/issues"
   },
-  "homepage": "https://github.com/sntwandy/my-website#readme"
+  "homepage": "https://github.com/sntwandy/my-website#readme",
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "postcss": "^7.0.28",
+    "tailwindcss": "^1.4.4"
+  }
 }
