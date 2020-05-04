@@ -19052,6 +19052,12 @@ video {
   font-size: 1.875rem;
 }
 
+.subtitles {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
 .card-container {
   display: grid;
   grid-template-rows: repeat(3, minmax(0, 1fr));
@@ -19064,6 +19070,15 @@ video {
   margin-top: 1rem;
   border-radius: 0.25rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card-container:hover {
+  -webkit-animation-name: card-container-anim;
+          animation-name: card-container-anim;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards
 }
 
 .card-figure {
@@ -19123,6 +19138,39 @@ video {
           animation-duration: 2s;
 }
 
+.studies-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: auto;
+  height: 10rem;
+}
+
+.studies-card:hover {
+  -webkit-animation-name: studiesCardAnim;
+          animation-name: studiesCardAnim;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards
+}
+
+.studies-title-institute {
+  --text-opacity: 1;
+  color: #1a202c;
+  color: rgba(26, 32, 44, var(--text-opacity));
+  font-weight: 400;
+  text-align: center;
+}
+
+.studies-degree-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @-webkit-keyframes showSkills {
   from {
     width: 0;
@@ -19140,6 +19188,75 @@ video {
 
   to {
     width: 83.333333%;
+  }
+}
+
+.framework-card:hover {
+  -webkit-animation-name: frameworkAnim;
+          animation-name: frameworkAnim;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes frameworkAnim {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes frameworkAnim {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes card-container-anim {
+  from {
+    transform: scale(1);
+  }
+
+  to{
+    transform: scale(1.1);
+  }
+}
+
+@keyframes card-container-anim {
+  from {
+    transform: scale(1);
+  }
+
+  to{
+    transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes studiesCardAnim {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes studiesCardAnim {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
   }
 }
 
