@@ -19043,7 +19043,7 @@ video {
 }
 
 .bg-nav-color {
-  background-color: #24292e;
+  background-color: #ff404c;
 }
 
 .titles {
@@ -19112,6 +19112,33 @@ video {
 .card-bar-child {
   height: 100%;
   border-radius: 9999px;
+}
+
+.card-bar-child {
+  -webkit-animation-name: showSkills;
+          animation-name: showSkills;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes showSkills {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 83.333333%;
+  }
+}
+
+@keyframes showSkills {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 83.333333%;
+  }
 }
 
 @media (min-width: 640px) {
