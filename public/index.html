@@ -20,7 +20,7 @@
                     <a href="#studies">Studies</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -174,7 +174,22 @@
         </section>
         <hr class="my-8">
         <section id="contact">
-
+            <div class="titles">
+                <h2>Contact me.</h2>
+            </div>
+            <form class="bg-nav-color rounded-lg" action="mailto:sntwandy@gmail.com">
+                <div class="flex flex-col justify-center items-center">
+                    <label class="text-lg font-semibold" for="name">Name:</label>
+                    <input class="text-lg border" type="text" name="name" id="">
+                    <label class="text-lg font-semibold" for="email">Email:</label>
+                    <input class="text-lg border" type="mail" name="email" id="">
+                    <div class="flex flex-col items-center">
+                        <label class="text-lg font-semibold" for="description">Asunto:</label>
+                        <textarea class="w-4/5 text-lg" name="description" id="" cols="30" rows="3"></textarea>
+                    </div>
+                </div>
+                <button class="form-btn block mx-auto my-4 w-32 h-8 bg-red-400 text-gray-900 font-semibold rounded" action="submit">Send</button>
+            </form>
         </section>
     </main>
     <!--Footer-->

@@ -19171,6 +19171,45 @@ video {
   align-items: center;
 }
 
+.form-btn:hover {
+  -webkit-animation-name: formBtnAnim;
+          animation-name: formBtnAnim;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes formBtnAnim {
+  from {
+    --bg-opacity: 1;
+    background-color: #fc8181;
+    background-color: rgba(252, 129, 129, var(--bg-opacity));
+  }
+
+  to {
+    --bg-opacity: 1;
+    background-color: #f56565;
+    background-color: rgba(245, 101, 101, var(--bg-opacity));
+    font-size: 1.125rem;
+  }
+}
+
+@keyframes formBtnAnim {
+  from {
+    --bg-opacity: 1;
+    background-color: #fc8181;
+    background-color: rgba(252, 129, 129, var(--bg-opacity));
+  }
+
+  to {
+    --bg-opacity: 1;
+    background-color: #f56565;
+    background-color: rgba(245, 101, 101, var(--bg-opacity));
+    font-size: 1.125rem;
+  }
+}
+
 @-webkit-keyframes showSkills {
   from {
     width: 0;
