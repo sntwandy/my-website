@@ -19180,6 +19180,35 @@ video {
           animation-fill-mode: forwards;
 }
 
+.sntwandy-name:hover {
+  -webkit-animation-name: sntwandyAnim;
+          animation-name: sntwandyAnim;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sntwandyAnim {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes sntwandyAnim {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
 @-webkit-keyframes formBtnAnim {
   from {
     --bg-opacity: 1;
