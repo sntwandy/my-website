@@ -19058,6 +19058,102 @@ video {
   font-size: 1.5rem;
 }
 
+.nav-ul {
+  display: block;
+  height: 6rem;
+  font-weight: 600;
+  justify-content: space-between;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  text-transform: uppercase;
+}
+
+.nav-burguer-contaniner {
+  display: flex;
+  justify-content: space-between;
+  --bg-opacity: 1;
+  background-color: #e53e3e;
+  background-color: rgba(229, 62, 62, var(--bg-opacity));
+}
+
+.nav-burguer {
+  font-size: 1.875rem;
+  margin-right: 0.5rem;
+}
+
+.nav-li-container {
+  --bg-opacity: 1;
+  background-color: #e53e3e;
+  background-color: rgba(229, 62, 62, var(--bg-opacity));
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+}
+
+.header-aboutme {
+  display: flex;
+  justify-content: flex-start;
+  text-align: justify;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  --text-opacity: 1;
+  color: #1a202c;
+  color: rgba(26, 32, 44, var(--text-opacity));
+}
+
+.framework-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --bg-opacity: 1;
+  background-color: #e53e3e;
+  background-color: rgba(229, 62, 62, var(--bg-opacity));
+  width: 75%;
+}
+
+.framework-container-child {
+  margin-left: auto;
+  margin-right: auto;
+  --bg-opacity: 1;
+  background-color: #fc8181;
+  background-color: rgba(252, 129, 129, var(--bg-opacity));
+  width: 8rem;
+  height: 8rem;
+  border-radius: 9999px;
+}
+
+.framework-figure {
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+}
+
+.framework-title {
+  text-align: center;
+  font-weight: 500;
+  --text-opacity: 1;
+  color: #1a202c;
+  color: rgba(26, 32, 44, var(--text-opacity));
+}
+
+.sntwandy-name {
+  cursor: pointer;
+  font-size: 1.875rem;
+  font-weight: 800;
+  margin-left: 1rem;
+}
+
 .card-container {
   display: grid;
   grid-template-rows: repeat(3, minmax(0, 1fr));
@@ -19292,19 +19388,11 @@ video {
   from {
     transform: scale(1);
   }
-
-  to{
-    transform: scale(1.1);
-  }
 }
 
 @keyframes card-container-anim {
   from {
     transform: scale(1);
-  }
-
-  to{
-    transform: scale(1.1);
   }
 }
 

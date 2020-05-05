@@ -9,12 +9,12 @@
 <body>
     <header>
         <nav x-data="{ open: false }">
-            <ul class="block h-24 sm:flex sm:h-16 sm:items-center font-semibold sm:bg-red-600 justify-between text-white uppercase">
-                <div class="flex justify-between bg-red-600">
-                    <span class="sntwandy-name cursor-pointer text-3xl font-extrabold ml-4">SNTWANDY</span>
-                    <div @click="open = true" class="sm:hidden text-3xl mr-2">&equiv;</div>
+            <ul class="nav-ul sm:flex sm:h-16 sm:items-center sm:bg-red-600 ">
+                <div class="nav-burguer-contaniner">
+                    <span class="sntwandy-name">SNTWANDY</span>
+                    <div @click="open = true" class="nav-burguer sm:hidden">&equiv;</div>
                 </div>
-                <div  x-show="open" @click.away="open = false" class="sm:hidden bg-red-600 mx-auto mt-1 rounded-lg flex justify-evenly w-full h-12 sm:h-16 items-center">
+                <div  x-show="open" @click.away="open = false" class="nav-li-container sm:h-16 sm:hidden">
                     <li>
                         <a href="#aboutme">About</a>
                     </li>
@@ -29,7 +29,7 @@
                     </li>
                 </div>
 
-                <div class="invisible sm:visible flex justify-evenly w-3/5 h-12 sm:h-16 items-center">
+                <div class="nav-li-container invisible sm:visible sm:h-16">
                     <li>
                         <a href="#aboutme">About</a>
                     </li>
@@ -55,7 +55,7 @@
                 <div>
                     <h2 class="titles">About me</h2>
                 </div>
-                <div class="flex justify-start text-justify mx-2 mb-4 text-gray-900">
+                <div class="header-aboutme">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maiores rerum, quibusdam accusamus aperiam eius nihil, hic officia velit voluptates alias impedit recusandae exercitationem, incidunt earum dolores molestiae ullam! Cum!
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus corrupti magnam facilis consequuntur consectetur vitae nostrum doloremque fugit nam repellendus voluptatem iste a esse minus ratione vero, laudantium explicabo?</p>
                 </div>
@@ -118,36 +118,36 @@
             <div>
                 <h3 class="subtitles">Frameworks CSS</h3>
             </div>
-            <div class="block mx-auto sm:mx-0 sm:flex sm:justify-evenly sm:items-center bg-red-600 w-3/4 h-128 sm:w-auto sm:h-64 rounded-lg shadow-lg">
-                <div class="mx-auto sm:mx-0 bg-red-400 w-32 h-32 sm:w-40 sm:h-40 sm:h-40 rounded-full">
+            <div class="framework-container sm:mx-0 sm:flex sm:justify-evenly sm:items-center sm:w-auto sm:h-64">
+                <div class="framework-container-child sm:mx-0 sm:w-40 sm:h-40 sm:h-40">
                     <!--Bootstrap 4 CARD-->
                     <div class="framework-card">
-                        <figure class="w-24 sm:w-32 mx-auto pt-4 sm:pt-0 sm:mt-8">
+                        <figure class="framework-figure sm:w-32 sm:pt-0 sm:mt-8">
                             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwiki.smu.edu.sg%2Fis480%2Fimg_auth.php%2Fthumb%2F1%2F10%2FTweetboard_bootstrap_logo.png%2F250px-Tweetboard_bootstrap_logo.png&f=1&nofb=1" alt="Bootstrap 4">
                         </figure>
-                        <div class="text-center font-medium text-gray-900">
+                        <div class="framework-title">
                             <span>Bootstrap 4</span>
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto sm:mx-0 bg-red-400 w-32 h-32 sm:w-40 sm:h-40 sm:h-40 rounded-full">
+                <div class="framework-container-child sm:mx-0 sm:w-40 sm:h-40 sm:h-40">
                     <!--Foundation CARD-->
                     <div class="framework-card">
-                        <figure class="w-24 sm:w-24 mx-auto pt-4 sm:pt-0 sm:mt-8">
+                        <figure class="framework-figure sm:w-24 sm:pt-0 sm:mt-8">
                             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcodekitapp.com%2Fimages%2Fhelp%2Ffree-zurb-icon%402x.png&f=1&nofb=1" alt="Foundation">
                         </figure>
-                        <div class="text-center font-medium text-gray-900">
+                        <div class="framework-title">
                             <span>Foundation</span>
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto sm:mx-0 bg-red-400 w-32 h-32 sm:w-40 sm:h-40 sm:h-40 rounded-full">
+                <div class="framework-container-child sm:mx-0 sm:w-40 sm:h-40 sm:h-40">
                     <!--TailwindCSS CARD-->
                     <div class="framework-card">
-                        <figure class="w-20 sm:w-24 mx-auto pt-4 sm:pt-0 sm:mt-6">
+                        <figure class="framework-figure sm:w-24 sm:pt-0 sm:mt-6">
                             <img class="rounded-full" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcamo.githubusercontent.com%2F13228ccdd992ba550cfb2734e83fee77d429ce70%2F68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f3839353237343032363738333836363838312f453147316e4e62305f343030783430302e6a7067&f=1&nofb=1" alt="TailwindCSS">
                         </figure>
-                        <div class="text-center font-medium text-gray-900">
+                        <div class="framework-title">
                             <span>TailwindCSS</span>
                         </div>
                     </div>
