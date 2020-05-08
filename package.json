@@ -4,7 +4,7 @@
   "description": "It's my personal website: @sntwandy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server.js",
     "build": "npx tailwindcss build ./css/tailwind.css -o ./public/css/styles.css"
   },
   "repository": {
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/sntwandy/my-website#readme",
   "dependencies": {
     "autoprefixer": "^9.7.6",
+    "express": "^4.17.1",
     "postcss": "^7.0.28",
     "tailwindcss": "^1.4.4"
   },
