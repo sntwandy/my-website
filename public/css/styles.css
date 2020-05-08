@@ -19167,6 +19167,16 @@ video {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
+.float-card-container {
+  border-radius: 0.25rem;
+  position: absolute;
+  --bg-opacity: 1;
+  background-color: #f6ad55;
+  background-color: rgba(246, 173, 85, var(--bg-opacity));
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  width: 91.666667%;
+}
+
 .card-container:hover {
   -webkit-animation-name: card-container-anim;
           animation-name: card-container-anim;
@@ -19264,6 +19274,42 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.project-card {
+  width: 16rem;
+  border-radius: 9999px;
+  height: 16rem;
+  margin-top: 2rem;
+}
+
+.project-card:hover {
+  -webkit-animation-name: project-card-anim;
+          animation-name: project-card-anim;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes project-card-anim {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes project-card-anim {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
 }
 
 .form-btn:hover {
@@ -19374,26 +19420,6 @@ video {
 }
 
 @keyframes frameworkAnim {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.1);
-  }
-}
-
-@-webkit-keyframes card-container-anim {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.1);
-  }
-}
-
-@keyframes card-container-anim {
   from {
     transform: scale(1);
   }
