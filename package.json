@@ -4,8 +4,7 @@
   "description": "It's my personal website: @sntwandy",
   "main": "index.js",
   "scripts": {
-    "start":"node server.js",
-    "build": "npx tailwindcss build ./css/tailwind.css -o ./public/css/styles.css"
+    "start":"node server.js"
   },
   "repository": {
     "type": "git",
