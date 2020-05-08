@@ -19100,7 +19100,6 @@ video {
 .header-aboutme {
   display: flex;
   justify-content: flex-start;
-  text-align: justify;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 1rem;
